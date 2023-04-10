@@ -31,7 +31,7 @@ function App() {
   }
 
   function search(items) {
-    return items.filter((item) => {
+    items.filter((item) => {
       if (item.region === filterParam) {
         if (
           item.name.official.toLowerCase().includes(searchCountry.toLowerCase())
@@ -45,8 +45,8 @@ function App() {
           return item;
         }
       }
-      //
     });
+    return true;
   }
 
   return (
