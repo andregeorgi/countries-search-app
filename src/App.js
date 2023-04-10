@@ -45,8 +45,8 @@ function App() {
           return item;
         }
       }
+      return false;
     });
-    return true;
   }
 
   return (
