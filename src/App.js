@@ -32,13 +32,13 @@ function App() {
 
   function search(items) {
     return items.filter((item) => {
-      if (item.region == filterParam) {
+      if (item.region === filterParam) {
         if (
           item.name.official.toLowerCase().includes(searchCountry.toLowerCase())
         ) {
           return item;
         }
-      } else if (filterParam == "All") {
+      } else if (filterParam === "All") {
         if (
           item.name.official.toLowerCase().includes(searchCountry.toLowerCase())
         ) {
